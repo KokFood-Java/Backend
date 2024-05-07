@@ -117,7 +117,7 @@ exports.orderMenu = async (req, res) => {
 
     const checkTransactionStatus = await TransactionsModels.findOne({
       id_user: id_user,
-      transaction_status: "pending",
+      transaction_status: "PENDING",
     });
 
     if (checkTransactionStatus) {
